@@ -38,6 +38,7 @@ public class MenuTools
             public void actionPerformed( ActionEvent e )
             {
                 button.doClick();
+                button.doClick();
             }
         } );
     }

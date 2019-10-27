@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="android/app/build/generated/not_namespaced_r_class_sources/freeDebug/r"/>
+	<classpathentry kind="src" path="android/app/build/generated/not_namespaced_r_class_sources/paidDebug/r"/>
+	<classpathentry kind="src" path="android/app/build/generated/source/buildConfig/androidTest/free/debug"/>
+	<classpathentry kind="src" path="android/app/build/generated/source/buildConfig/free/debug"/>
+	<classpathentry kind="src" path="android/app/build/generated/source/buildConfig/paid/debug"/>
+	<classpathentry kind="src" path="android/app/src/androidTest/java"/>
+	<classpathentry kind="src" path="android/app/src/main/java"/>
+	<classpathentry kind="src" path="src/engine/src"/>
+	<classpathentry kind="src" path="src/engine/test"/>
+	<classpathentry kind="src" path="src/render/src"/>
+	<classpathentry kind="src" path="src/render/test"/>
+	<classpathentry kind="src" path="src/ui-swing/src"/>
+	<classpathentry kind="src" path="src/ui-swing/test"/>
+	<classpathentry kind="src" path="src/ui-text/src"/>
+	<classpathentry kind="src" path="src/ui-text/test"/>
+	<classpathentry kind="lib" path="android/app/build/intermediates/merged_java_res/freeDebug/out.jar"/>
+	<classpathentry kind="lib" path="android/app/libs/rabbit-escape-generic.jar"/>
+	<classpathentry kind="lib" path="android/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="dist/rabbit-escape-0.13.1.jar"/>
+	<classpathentry kind="lib" path="dist/rabbit-escape-generic.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/org.hamcrest.core_1.3.0.jar"/>
+	<classpathentry kind="output" path="android/app/build/intermediates/javac/freeDebug/classes"/>
+</classpath>
