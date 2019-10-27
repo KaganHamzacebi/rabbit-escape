@@ -227,6 +227,14 @@ public class AndroidGameActivity extends RabbitEscapeActivity
         updatePauseButton( gameSurface.togglePaused() );
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        gameSurface.togglePaused();
+        updatePauseButton(true);
+    }
+
+
     private void updatePauseButton( boolean paused )
     {
         pauseButton.setCompoundDrawablesWithIntrinsicBounds(
@@ -399,4 +407,6 @@ public class AndroidGameActivity extends RabbitEscapeActivity
         }
         throw new UnrecognisedAbility( ability );
     }
+
+
 }
