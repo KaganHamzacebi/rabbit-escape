@@ -445,6 +445,7 @@ public class MenuUi
                     public void run()
                     {
                         placeMenu();
+                        Menu.refresh();
                     }
                 }
             );
