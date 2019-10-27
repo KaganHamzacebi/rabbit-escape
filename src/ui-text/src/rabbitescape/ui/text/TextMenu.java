@@ -76,6 +76,7 @@ public class TextMenu
         while ( true )
         {
             MenuItem item = showMenu( stack.peek() );
+            
             if ( item == null || item.type == MenuItem.Type.QUIT )
             {
                 stack.pop();
@@ -92,6 +93,8 @@ public class TextMenu
             {
                 handleTarget( item );
             }
+            
+            stack.clear();
         }
     }
 
@@ -253,6 +256,7 @@ public class TextMenu
     public void refreshEnabledItems()
     {
         Menu menu = stack.lastElement();
+        stack.clear();
         menu.refresh();
     }
 }
