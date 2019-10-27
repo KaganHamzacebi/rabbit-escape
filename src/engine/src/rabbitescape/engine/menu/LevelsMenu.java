@@ -38,6 +38,7 @@ public class LevelsMenu extends Menu
         this.levelsCompleted = levelsCompleted;
 
         refresh();
+        refresh();
     }
 
     private static MenuItem[] menuItems(
