@@ -23,7 +23,7 @@ public class Menu
         {
             @Override
             public Boolean apply( MenuItem item )
-            {
+            {refresh();
                 return ( item != null );
             }
         };
@@ -39,7 +39,7 @@ public class Menu
      * Overridden by subclasses that need to refresh their items when
      * something changes.
      */
-    public void refresh()
+    public static void refresh()
     {
     }
 }
