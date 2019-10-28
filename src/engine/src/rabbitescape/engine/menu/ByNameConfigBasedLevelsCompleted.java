@@ -19,7 +19,7 @@ public class ByNameConfigBasedLevelsCompleted implements LevelsCompleted
 
     private static final Locale en_UK = Locale.UK;
 
-    private final Config config;
+    private static Config config;
     private final LevelsList levelsList;
 
     // ---

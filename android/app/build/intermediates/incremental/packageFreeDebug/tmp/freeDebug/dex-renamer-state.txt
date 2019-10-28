@@ -1,0 +1,4 @@
+#Sun Oct 27 20:17:39 EET 2019
+base.0=/home/kagan/rabbit-escape/android/app/build/intermediates/dex/freeDebug/mergeDexFreeDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

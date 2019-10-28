@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="88363d71-e697-42cc-a098-8b887a81faf3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-beat_into_submission.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-beat_into_submission.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-empty.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-empty.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-let_them_run.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-let_them_run.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-lovely.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-lovely.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-sampling_memory.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-sampling_memory.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-the_final_rewind.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-the_final_rewind.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-this.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-this.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-witness.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/music/tryad-witness.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/cant_place_token.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/cant_place_token.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/place_token.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/place_token.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_bashing.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_bashing.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_bridging.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_bridging.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_burning.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_burning.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_climbing_bang_head.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_climbing_bang_head.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_climbing_start.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_climbing_start.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_digging.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_digging.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_drowning.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_drowning.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_dying.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_dying.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_entering.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_entering.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_entering_exit.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_entering_exit.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_exploding.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_exploding.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_out_of_bounds.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/assets/sounds/rabbit_out_of_bounds.ogg" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1STlrXWfYTXQ3SPowBRgZTe2ogK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88363d71-e697-42cc-a098-8b887a81faf3" name="Default Changelist" comment="" />
+      <created>1571595665941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571595665941</updated>
+      <workItem from="1571595669961" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

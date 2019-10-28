@@ -15,6 +15,7 @@ public class UpdateSwingMenuLevelWinListener implements LevelWinListener
     public void won()
     {
         menuUi.refreshEnabledItems();
+        menuUi.refreshEnabledItems();
     }
 
     @Override
