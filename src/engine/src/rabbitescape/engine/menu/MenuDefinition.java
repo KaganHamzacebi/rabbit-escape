@@ -53,6 +53,17 @@ public class MenuDefinition
                 ),
                 true
             ),
+            maybeItem(
+            	includeLoadLevel,
+            	"Settings",
+            	menu(
+            		"Choose on Settings Menu",
+            		item("Volume",Type.VOLUME,true),
+            		item("Screen Brightness",Type.SCREEN_BRIGHTNESS,true),
+            		item("Color of Rabbits",Type.COLOR_OF_RABBITS,true)
+            	),
+            	true
+            ), 	
             item( "Quit", Type.QUIT,  true )
         );
     }
@@ -80,4 +91,5 @@ public class MenuDefinition
         }
         return ret;
     }
+   
 }
