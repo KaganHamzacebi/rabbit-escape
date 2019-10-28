@@ -100,8 +100,10 @@ public class MegaCoder
      * @return The obfuscated ciphertext.
      */
     public static String encode( String input ) throws Exception {
+
         String last = input.replaceAll("[^\\x00-\\x7F]", "");
         if(input.length()!=last.length()) throw new Exception("non-printable chars");
+
         char[] charArray = input.toCharArray();
 
         char[] sortedCharsUsed = getSortedUniqueChars( charArray );
@@ -123,8 +125,10 @@ public class MegaCoder
      * @return The plaintext.
      */
     public static String decode( String input ) throws Exception {
+
         String last = input.replaceAll("[^\\x00-\\x7F]", "");
         if(input.length()!=last.length()) throw new Exception("non-printable chars");
+
         char[] charArray = input.toCharArray();
 
         charArray = shuffle( charArray, 0 );

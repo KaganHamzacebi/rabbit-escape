@@ -1,0 +1,1 @@
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":131,"versionName":"0.13.1","enabled":true,"outputFile":"app-paid-debug.apk","fullName":"paidDebug","baseName":"paid-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"net.artificialworlds.rabbitescape","split":"","minSdkVersion":"14"}}]
