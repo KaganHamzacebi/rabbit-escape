@@ -53,7 +53,7 @@ public class MenuDefinition
                 ),
                 true
             ),
-            maybeItem(
+         maybeItem(
             	includeLoadLevel,
             	"Settings",
             	menu(
