@@ -1,0 +1,78 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.artificialworlds.rabbitescapefree"
+4    android:installLocation="preferExternal"
+5    android:versionCode="131"
+6    android:versionName="0.13.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="14"
+9-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="26" />
+10-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml
+11
+12    <supports-screens
+12-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:7:5-10:7
+13        android:largeScreens="true"
+13-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:8:9-36
+14        android:xlargeScreens="true" />
+14-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:9:9-37
+15
+16    <application
+17        android:allowBackup="true"
+17-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:13:9-35
+18        android:debuggable="true"
+19        android:icon="@drawable/ic_launcher_free"
+19-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:15:9-34
+20        android:label="@string/app_name"
+20-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:14:9-41
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:16:9-40
+23        <activity
+23-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:17:9-24:20
+24            android:name="rabbitescape.ui.android.AndroidMenuActivity"
+24-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:18:13-71
+25            android:label="@string/app_name" >
+25-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:19:13-45
+26            <intent-filter>
+26-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:20:13-23:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:21:17-69
+27-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:21:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:22:17-77
+29-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:22:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity
+32-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:25:9-28:20
+33            android:name="rabbitescape.ui.android.AndroidAboutActivity"
+33-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:26:13-72
+34            android:label="@string/title_activity_android_about" >
+34-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:27:13-65
+35        </activity>
+36        <activity
+36-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:29:9-32:20
+37            android:name="rabbitescape.ui.android.AndroidGameActivity"
+37-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:30:13-71
+38            android:label="@string/title_activity_android_game" >
+38-->/home/kagan/rabbit-escape/android/app/src/main/AndroidManifest.xml:31:13-64
+39        </activity>
+40
+41        <meta-data
+41-->[com.android.support:appcompat-v7:26.1.0] /home/kagan/.gradle/caches/transforms-2/files-2.1/c589bb7ec2d841c67ae68a3682166223/appcompat-v7-26.1.0/AndroidManifest.xml:26:9-28:38
+42            android:name="android.support.VERSION"
+42-->[com.android.support:appcompat-v7:26.1.0] /home/kagan/.gradle/caches/transforms-2/files-2.1/c589bb7ec2d841c67ae68a3682166223/appcompat-v7-26.1.0/AndroidManifest.xml:27:13-51
+43            android:value="26.1.0" />
+43-->[com.android.support:appcompat-v7:26.1.0] /home/kagan/.gradle/caches/transforms-2/files-2.1/c589bb7ec2d841c67ae68a3682166223/appcompat-v7-26.1.0/AndroidManifest.xml:28:13-35
+44        <meta-data
+44-->[android.arch.lifecycle:runtime:1.0.0] /home/kagan/.gradle/caches/transforms-2/files-2.1/d0f6449185399ce77e6ff49656abaac3/runtime-1.0.0/AndroidManifest.xml:25:9-27:47
+45            android:name="android.arch.lifecycle.VERSION"
+45-->[android.arch.lifecycle:runtime:1.0.0] /home/kagan/.gradle/caches/transforms-2/files-2.1/d0f6449185399ce77e6ff49656abaac3/runtime-1.0.0/AndroidManifest.xml:26:13-58
+46            android:value="27.0.0-SNAPSHOT" />
+46-->[android.arch.lifecycle:runtime:1.0.0] /home/kagan/.gradle/caches/transforms-2/files-2.1/d0f6449185399ce77e6ff49656abaac3/runtime-1.0.0/AndroidManifest.xml:27:13-44
+47    </application>
+48
+49</manifest>
