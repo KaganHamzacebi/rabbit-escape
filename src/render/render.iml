@@ -9,6 +9,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <orderEntry type="library" name="rabbit-escape-generic" level="project" />
+    <orderEntry type="library" name="dist" level="project" />
+>>>>>>> 16f2fbe3d365fea9b55d1fda388af6e5d14083b7
+>>>>>>> 59afc5334c5a4110871bc279b6f2845e91ee20fe
     <orderEntry type="module" module-name="engine" />
   </component>
 </module>
