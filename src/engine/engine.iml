@@ -9,7 +9,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="rabbit-escape-generic" level="project" />
-    <orderEntry type="library" name="dist" level="project" />
   </component>
 </module>

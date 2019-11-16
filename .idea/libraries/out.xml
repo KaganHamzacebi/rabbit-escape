@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="out">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/android/app/build/intermediates/merged_java_res/freeDebug/out.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

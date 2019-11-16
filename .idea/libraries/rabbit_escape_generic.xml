@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="rabbit-escape-generic">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/android/app/libs/rabbit-escape-generic.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
