@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+
+    flavorDimensions "price"
+    productFlavors {
+        paid {
+            applicationId "net.artificialworlds.rabbitescape"
+            resValue "string", "app_name", "Rabbit Escape"
+            manifestPlaceholders = [
+                appIcon: "@drawable/ic_launcher"
+            ]
+        }
+        free {
+            applicationId "net.artificialworlds.rabbitescapefree"
+            resValue "string", "app_name", "Rabbit Escape Free"
+            manifestPlaceholders = [
+                appIcon: "@drawable/ic_launcher_free"
+            ]
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 131
+        versionName "0.13.1"
+    }
+    signingConfigs {
+        release {
+            storeFile file( "/home/andy/apk-key-store/keystore.jks" )
+            storePassword System.getenv( "KEY_STORE_PASSWORD" )
+            keyAlias "andybalaam"
+            keyPassword System.getenv( "KEY_PASSWORD" )
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation files('libs/rabbit-escape-generic.jar')
+}

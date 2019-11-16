@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.artificialworlds.rabbitescape"
+    android:installLocation="preferExternal"
+    >
+
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+    />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="${appIcon}"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="rabbitescape.ui.android.AndroidMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="rabbitescape.ui.android.AndroidAboutActivity"
+            android:label="@string/title_activity_android_about" >
+        </activity>
+        <activity
+            android:name="rabbitescape.ui.android.AndroidGameActivity"
+            android:label="@string/title_activity_android_game" >
+        </activity>
+    </application>
+
+</manifest>
