@@ -1,0 +1,26 @@
+:name=Tomb raider
+:description=Reach the burial chamber
+:author_name=colonelfazackerley
+:author_url=https://github.com/colonelfazackerley
+:hint.1=Dig.
+:hint.2=Use a bridge token to stop excavating.
+:hint.3=Careful timing is required to bash the correct direction.
+:solution.1=dig;(12,3);bridge;5;(12,5);bash;4;(12,5);dig;4;(9,5);until:WON
+:num_rabbits=3
+:num_to_save=3
+:rabbit_delay=10
+:music=tryad-beat_into_submission
+:bash=5
+:block=2
+:bridge=4
+:dig=5
+          Q          
+                     
+          /\         
+         /##\        
+        /####\       
+       /######\      
+      /########\     
+     /##########\    
+    /####O#######\   
+  ################## 
