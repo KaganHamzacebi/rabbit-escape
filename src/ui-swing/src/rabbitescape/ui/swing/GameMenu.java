@@ -25,7 +25,7 @@ class GameMenu
         void abilityChosen( Token.Type ability );
     }
 
-    private static final int ICON_SIZE = 50;
+    private static final int ICON_SIZE = 32;
 
     public JToggleButton mute;
     public JToggleButton pause;
@@ -115,7 +115,6 @@ class GameMenu
         this.back = addButton(
             "menu_back",
             t( "Back" ),
-            
             doubleButtonSize
         );
 

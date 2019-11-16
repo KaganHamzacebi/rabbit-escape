@@ -13,11 +13,7 @@ public class MenuItem
         QUIT,
         LEVEL,
         LOAD,
-        GITHUB_ISSUE,
-        SETTINGS,
-        VOLUME,
-        SCREEN_BRIGHTNESS,
-        COLOR_OF_RABBITS
+        GITHUB_ISSUE
     }
 
     public final Menu menu;
@@ -63,5 +59,4 @@ public class MenuItem
         this.enabled = enabled;
         this.hidden = hidden;
     }
-  
 }

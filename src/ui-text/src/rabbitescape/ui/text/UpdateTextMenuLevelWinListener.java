@@ -15,7 +15,6 @@ public class UpdateTextMenuLevelWinListener implements LevelWinListener
     public void won()
     {
         textMenu.refreshEnabledItems();
-        textMenu.refreshEnabledItems();
     }
 
     @Override

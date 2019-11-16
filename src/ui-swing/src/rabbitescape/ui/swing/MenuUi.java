@@ -122,31 +122,12 @@ public class MenuUi
                 {
                     return;
                 }
-                case SETTINGS:
-                {   chooseSettings();
-                    return;
-                }
-                case VOLUME:
-                {   chooseVolume();
-                    return;
-                }
-                case SCREEN_BRIGHTNESS:
-                {
-                    chooseBrightness();
-                    return;
-                }
-                case COLOR_OF_RABBITS:
-                {
-                    chooseColors();
-                    return;
-                }
                 default:
                 {
                     throw new UnknownMenuItemType( item );
                 }
             }
         }
-
     }
 
     private static final Color backgroundColor = Color.WHITE;
@@ -198,40 +179,6 @@ public class MenuUi
 
         init();
     }
-
-    
-
-    public void chooseSettings()
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-
-
-    public void chooseVolume()
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-
-
-    public void chooseBrightness()
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-
-
-    public void chooseColors()
-    {
-        // TODO Auto-generated method stub
-        
-    }
-
-
 
     public void init()
     {
