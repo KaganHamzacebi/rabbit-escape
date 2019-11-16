@@ -1,3 +1,4 @@
+idea/
 bin/
 dist/
 /src/*/src/**/images32/
@@ -36,5 +37,8 @@ gen/
 local.properties
 proguard/
 *.log
+*.iml
+*.class
+*.ogg
 
 
