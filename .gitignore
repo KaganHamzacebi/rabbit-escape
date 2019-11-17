@@ -38,7 +38,6 @@ local.properties
 proguard/
 *.log
 *.iml
-*.class
 *.ogg
 
 

@@ -20,10 +20,11 @@ public class Menu
     {
         Util.Function<MenuItem, Boolean> notNull =
             new Util.Function<MenuItem, Boolean>()
+            
         {
             @Override
             public Boolean apply( MenuItem item )
-            {
+            {refresh();
                 return ( item != null );
             }
         };
