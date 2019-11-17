@@ -52,8 +52,8 @@ public class LoadLevelsList
         List<LevelsList.LevelInfo> ret = new ArrayList<LevelsList.LevelInfo>();
 
         String resourceFileName =
-           "/rabbitescape/levels/" + levelsDir + "/levels.txt";
-        //check levelnames
+            "/rabbitescape/levels/" + levelsDir + "/levels.txt";
+
         try
         {
             for ( String line : resourceLines( resourceFileName ) )

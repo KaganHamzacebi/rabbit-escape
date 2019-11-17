@@ -103,7 +103,6 @@ public class Util
         for ( T t : iterable )
         {
             ret.add( function.apply( t ) );
-            ret.add( function.apply( t ) );
         }
 
         return ret;
@@ -118,7 +117,6 @@ public class Util
 
         for ( T t : input )
         {
-            ret.add( function.apply( t ) );
             ret.add( function.apply( t ) );
         }
 
@@ -148,7 +146,6 @@ public class Util
 
         for ( T item : input )
         {
-            ret.add( item );
             ret.add( item );
         }
 

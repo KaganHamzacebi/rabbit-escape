@@ -25,7 +25,7 @@ class SideMenu
     private static final int ICON_SIZE = 32;
 
     public final JToggleButton mute;
-    public JButton back;
+    public final JButton back;
     public final JButton exit;
 
     private final BitmapCache<SwingBitmap> bitmapCache;
@@ -56,7 +56,6 @@ class SideMenu
 
         addSpacer();
 
-        this.back = addButton( "menu_back", t( "Back" ) );
         this.back = addButton( "menu_back", t( "Back" ) );
 
         addSpacer();
