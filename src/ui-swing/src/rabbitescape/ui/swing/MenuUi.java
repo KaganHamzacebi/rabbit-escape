@@ -230,6 +230,7 @@ public class MenuUi
         label.setHorizontalAlignment( SwingConstants.CENTER );
         label.setForeground( Color.RED );
         label.setPreferredSize( buttonSize );
+        SwingUtils.setFontSize(label, buttonSize);
         menuPanel.add( label, constraints( 0 ) );
 
         for ( IdxObj<MenuItem> item : enumerate1( menu.items ) )
@@ -247,6 +248,7 @@ public class MenuUi
             button.setVisible( true );
             button.setEnabled( item.object.enabled || TapTimer.matched );
             button.setPreferredSize( buttonSize );
+            SwingUtils.setFontSize(button, buttonSize);
             menuPanel.add( button, constraints( item.index ) );
         }
 

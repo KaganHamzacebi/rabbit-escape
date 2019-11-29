@@ -136,7 +136,7 @@ class SideMenu
         button.setBackground( backgroundColor );
         button.setBorderPainted( false );
         button.setToolTipText( description );
-
+        SwingUtils.setFontSize(button, buttonSizeInPixels);
         panel.add( button );
 
         return button;

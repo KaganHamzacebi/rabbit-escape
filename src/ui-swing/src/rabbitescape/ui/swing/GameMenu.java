@@ -172,6 +172,8 @@ class GameMenu
             JLabel abilityNumber =  new JLabel();
             abilityNumber.setPreferredSize( buttonSizeInPixels );
             abilityNumber.setHorizontalTextPosition( SwingConstants.LEFT );
+            SwingUtils.setFontSize(button,buttonSizeInPixels); 
+            SwingUtils.setFontSize(abilityNumber,buttonSizeInPixels); 
             panel.add( abilityNumber );
 
             MenuTools.clickOnKey( button, iconName, key );
@@ -238,7 +240,7 @@ class GameMenu
         button.setBorderPainted( false );
         button.setToolTipText( description );
         button.setPreferredSize( buttonSizeInPixels );
-
+        SwingUtils.setFontSize(button, buttonSizeInPixels);
         panel.add( button );
 
         return button;
