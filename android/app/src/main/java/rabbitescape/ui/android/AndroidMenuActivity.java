@@ -19,6 +19,7 @@ import rabbitescape.engine.menu.LoadLevelsList;
 import rabbitescape.engine.menu.Menu;
 import rabbitescape.engine.menu.MenuDefinition;
 import rabbitescape.engine.menu.MenuItem;
+import rabbitescape.ui.android.settings.MySettingsActivity;
 
 public class AndroidMenuActivity extends RabbitEscapeActivity
 {
@@ -254,6 +255,7 @@ public class AndroidMenuActivity extends RabbitEscapeActivity
         int id = item.getItemId();
         if ( id == R.id.action_settings )
         {
+            startActivity(new Intent(this, MySettingsActivity.class));
             return true;
         }
         return super.onOptionsItemSelected( item );
