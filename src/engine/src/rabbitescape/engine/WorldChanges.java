@@ -189,8 +189,10 @@ public class WorldChanges
             return;
         }
 
-        tokensToAdd.add( new Token( x, y, type, world ) );
-        world.abilities.put( type, numLeft - 1 );
+        if( world.getTokenAt( x, y) == null) {
+            tokensToAdd.add(new Token(x, y, type, world));
+            world.abilities.put(type, numLeft - 1);
+        }
     }
 
     public synchronized void removeToken( Token thing )
