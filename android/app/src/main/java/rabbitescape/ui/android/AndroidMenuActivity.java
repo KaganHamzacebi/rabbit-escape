@@ -3,10 +3,11 @@ package rabbitescape.ui.android;
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
 
 import net.artificialworlds.rabbitescape.R;
 
@@ -19,6 +20,7 @@ import rabbitescape.engine.menu.LoadLevelsList;
 import rabbitescape.engine.menu.Menu;
 import rabbitescape.engine.menu.MenuDefinition;
 import rabbitescape.engine.menu.MenuItem;
+import rabbitescape.ui.android.settings.MySettingsActivity;
 
 public class AndroidMenuActivity extends RabbitEscapeActivity
 {
@@ -28,11 +30,12 @@ public class AndroidMenuActivity extends RabbitEscapeActivity
     private int[] positions;
 
     private Menu menu = null;
-    private ListView listView = null;
+    private RecyclerView listView = null;
     private Button muteButton = null;
 
     // Saved state
     public int selectedItemPosition = -1;
+    private LinearLayoutManager layoutManager;
 
     @Override
     protected void onCreate( Bundle savedInstanceState )
@@ -81,16 +84,20 @@ public class AndroidMenuActivity extends RabbitEscapeActivity
 
         menu = navigateToMenu( positions, mainMenu );
 
-        listView = (ListView)findViewById( R.id.listView );
-        listView.setSelection( selectedItemPosition );
-        addItemListener( menu, listView );
+        listView = findViewById( R.id.listView );
+
+        layoutManager = new LinearLayoutManager(this);
+        listView.setLayoutManager(layoutManager);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(listView.getContext(),
+                layoutManager.getOrientation());
+        listView.addItemDecoration(dividerItemDecoration);
     }
 
     @Override
     public void onSaveInstanceState( Bundle outState )
     {
         super.onSaveInstanceState( outState );
-        outState.putInt( STATE_SELECTED_ITEM, listView.getSelectedItemPosition() );
+        outState.putInt( STATE_SELECTED_ITEM, selectedItemPosition );
     }
 
     @Override
@@ -99,8 +106,7 @@ public class AndroidMenuActivity extends RabbitEscapeActivity
         super.onResume();
         sound.setMusic( "tryad-let_them_run" );
         menu.refresh();
-        listView.setAdapter( new MenuListAdapter( this, menu ) );
-        listView.setSelection( selectedItemPosition );
+        listView.setAdapter( new MenuListAdapter(this, menu, getItemListener( menu, listView )) );
     }
 
     @Override
@@ -115,55 +121,44 @@ public class AndroidMenuActivity extends RabbitEscapeActivity
         muteButton.invalidate();
     }
 
-    private void addItemListener( final Menu menu, ListView listView )
+    private View.OnClickListener getItemListener(final Menu menu, final RecyclerView listView )
     {
         final AndroidMenuActivity parentActivity = this;
 
-        listView.setOnItemClickListener(
-            new AdapterView.OnItemClickListener()
-            {
-                @Override
-                public void onItemClick(
-                    AdapterView<?> adapterView, View view, int position, long id )
-                {
-                    selectedItemPosition = position;
-                    MenuItem item = menu.items[position];
-                    switch( item.type )
-                    {
-                        case MENU:
-                        {
-                            Intent intent = new Intent( parentActivity, AndroidMenuActivity.class );
-                            intent.putExtra( POSITION, appendToArray( positions, position ) );
-                            startActivity( intent );
-                            return;
-                        }
-                        case ABOUT:
-                        {
-                            about( parentActivity );
-                            return;
-                        }
-                        case LEVEL:
-                        {
-                            level( parentActivity, (LevelMenuItem)item, (LevelsMenu)menu );
-                            return;
-                        }
-                        case QUIT:
-                        {
-                            exit();
-                            return;
-                        }
-                        case DEMO:
-                        {
-                            return;
-                        }
-                        default:
-                        {
-                            throw new UnknownMenuItemType( item );
-                        }
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = listView.getChildLayoutPosition(view);
+                selectedItemPosition = position;
+                MenuItem item = menu.items[selectedItemPosition];
+                switch (item.type) {
+                    case MENU: {
+                        Intent intent = new Intent(parentActivity, AndroidMenuActivity.class);
+                        intent.putExtra(POSITION, appendToArray(positions, position));
+                        startActivity(intent);
+                        return;
+                    }
+                    case ABOUT: {
+                        about(parentActivity);
+                        return;
+                    }
+                    case LEVEL: {
+                        level(parentActivity, (LevelMenuItem) item, (LevelsMenu) menu);
+                        return;
+                    }
+                    case QUIT: {
+                        exit();
+                        return;
+                    }
+                    case DEMO: {
+                        return;
+                    }
+                    default: {
+                        throw new UnknownMenuItemType(item);
                     }
                 }
             }
-        );
+        };
     }
 
     private void exit()
@@ -254,6 +249,7 @@ public class AndroidMenuActivity extends RabbitEscapeActivity
         int id = item.getItemId();
         if ( id == R.id.action_settings )
         {
+            startActivity(new Intent(this, MySettingsActivity.class));
             return true;
         }
         return super.onOptionsItemSelected( item );

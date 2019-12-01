@@ -6,5 +6,10 @@
     <string name="pause">pause</string>
     <string name="mute">mute</string>
     <string name="title_activity_android_about">About Rabbit Escape</string>
-
+    <string name="title_activity_android_settings">Settings</string>
+    <string name="musicSound">musicSound</string>
+    <string name="share_app">Share App</string>
+    <string name="share_app_context">Share Rabbit Escape Game! You can download from this link: https://play.google.com/store/apps/details?id=net.artificialworlds.rabbitescape </string>
+    <string name="feedback_subject">Feedback About </string>
+    <string name="send_feedback">Send feedback</string>
 </resources>

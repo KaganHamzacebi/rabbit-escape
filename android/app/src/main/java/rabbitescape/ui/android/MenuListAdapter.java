@@ -1,62 +1,75 @@
 package rabbitescape.ui.android;
 
 import android.graphics.Typeface;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import net.artificialworlds.rabbitescape.R;
+
 import rabbitescape.engine.config.TapTimer;
+import rabbitescape.engine.menu.LevelMenuItem;
 import rabbitescape.engine.menu.Menu;
 import rabbitescape.engine.menu.MenuItem;
 
 import static rabbitescape.engine.i18n.Translation.t;
 
-public class MenuListAdapter extends ArrayAdapter<MenuItem>
+public class MenuListAdapter extends RecyclerView.Adapter<MenuListAdapter.MyViewHolder>
 {
     private final MenuItem[] items;
     private final AndroidMenuActivity menuActivity;
+    private final View.OnClickListener mOnClickListener;
 
-    public MenuListAdapter( AndroidMenuActivity menuActivity, Menu menu )
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView title;
+        public ImageView icon;
+
+        public MyViewHolder(View view) {
+            super(view);
+            icon = view.findViewById(R.id.icon);
+            title = view.findViewById(R.id.title);
+            view.setOnClickListener(mOnClickListener);
+        }
+    }
+
+    public MenuListAdapter( AndroidMenuActivity menuActivity, Menu menu, View.OnClickListener mOnClickListener)
     {
-        super( menuActivity, android.R.layout.simple_list_item_1, menu.items );
         this.menuActivity = menuActivity;
         items = menu.items;
+        this.mOnClickListener = mOnClickListener;
     }
 
     @Override
-    public int getViewTypeCount()
-    {
-        return 1;
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.simple_list_item_1, parent, false);
+
+        return new MyViewHolder(itemView);
     }
 
     @Override
-    public boolean isEnabled( int position )
-    {
-        return items[position].enabled || TapTimer.matched;
-    }
-
-    @Override
-    public View getView( int position, View convertView, ViewGroup viewGroup )
-    {
-        TextView ret;
-        if ( convertView != null && convertView instanceof TextView )
-        {
-            ret = (TextView)convertView;
-        }
-        else
-        {
-            ret = (TextView)super.getView( position, convertView, viewGroup );
-        }
-
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
         MenuItem item = items[ position ];
-        ret.setText( t( item.name, item.nameParams ) );
-        ret.setTypeface(
-            null,
-            menuActivity.selectedItemPosition == position ? Typeface.BOLD : Typeface.NORMAL
-        );
-        ret.setEnabled( item.enabled || TapTimer.matched );
 
-        return ret;
+        holder.title.setText( t( item.name, item.nameParams ) );
+        holder.title.setTypeface(
+                null,
+                menuActivity.selectedItemPosition == position ? Typeface.BOLD : Typeface.NORMAL
+        );
+        holder.title.setEnabled( item.enabled || TapTimer.matched );
+        if (item instanceof LevelMenuItem) {
+            holder.icon.setVisibility(View.VISIBLE);
+            holder.icon.setEnabled( item.enabled || TapTimer.matched );
+            holder.icon.setImageResource(item.enabled || TapTimer.matched  ? R.drawable.lock_open_24px : R.drawable.lock24px);
+        }
+    }
+
+    @Override
+    public int getItemCount() {
+        return items.length;
     }
 }

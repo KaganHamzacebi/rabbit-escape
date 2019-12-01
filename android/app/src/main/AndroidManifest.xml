@@ -30,6 +30,15 @@
             android:name="rabbitescape.ui.android.AndroidGameActivity"
             android:label="@string/title_activity_android_game" >
         </activity>
+        <activity
+            android:name="rabbitescape.ui.android.settings.MySettingsActivity"
+            android:label="@string/title_activity_android_settings"
+            android:parentActivityName="rabbitescape.ui.android.AndroidGameActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rabbitescape.ui.android.AndroidGameActivity"/>
+        </activity>
     </application>
 
 </manifest>

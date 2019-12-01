@@ -65,7 +65,9 @@ public class TopBar implements Physics.StatsChangedListener
     private JLabel addLabel( String text, int width )
     {
         JLabel ret = new JLabel( t( text, newMap( "num", "" ) ) );
-        ret.setPreferredSize( new Dimension( width, 20 ) );
+        Dimension preferredSize = new Dimension(width, 20);
+        ret.setPreferredSize(preferredSize);
+        SwingUtils.setFontSize(ret, preferredSize);
         panel.add( ret );
         return ret;
     }

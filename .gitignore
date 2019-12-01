@@ -1,9 +1,6 @@
 idea/
 bin/
 dist/
-/src/*/src/**/images32/
-/src/*/src/**/images64/
-/src/*/src/**/images128/
 /src/swing/src/rabbitescape/ui/swing/sounds/*.wav
 /src/swing/src/rabbitescape/ui/swing/music/*.wav
 .idea/workspace.xml
