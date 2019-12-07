@@ -7,8 +7,6 @@ import static rabbitescape.engine.Block.Shape.*;
 import rabbitescape.engine.*;
 import rabbitescape.engine.ChangeDescription.State;
 
-import java.util.List;
-
 public class Walking extends Behaviour
 {
     @Override
@@ -298,24 +296,6 @@ public class Walking extends Behaviour
                 checkJumpOntoSlope( world, rabbit );
                 return true;
             }
-            case ENTERED_PORTAL:
-                List<Portal> tmp = world.getPortals();
-                if(tmp.size() < 2)
-                    return false;
-                Portal p1 = tmp.get(0);
-                Portal p2 = tmp.get(1);
-                if( rabbit.x == p1.x && rabbit.y == p1.y ) {
-                    rabbit.x = p2.x;
-                    rabbit.y = p2.y;
-                    return true;
-                }
-                else if( rabbit.x == p2.x && rabbit.y == p2.y ){
-                    rabbit.x = p1.x;
-                    rabbit.y = p1.y;
-                    return true;
-                }
-                else
-                    return false;
             default:
             {
                 throw new AssertionError(

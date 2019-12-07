@@ -220,8 +220,6 @@ public class ChangeDescription
 
         ENTRANCE,
         EXIT,
-
-        ENTERED_PORTAL,
     }
 
     public static class Change
