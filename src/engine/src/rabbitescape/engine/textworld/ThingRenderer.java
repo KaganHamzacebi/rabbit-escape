@@ -2,12 +2,7 @@ package rabbitescape.engine.textworld;
 
 import java.util.List;
 
-import rabbitescape.engine.Entrance;
-import rabbitescape.engine.Exit;
-import rabbitescape.engine.Fire;
-import rabbitescape.engine.Pipe;
-import rabbitescape.engine.Thing;
-import rabbitescape.engine.Token;
+import rabbitescape.engine.*;
 import rabbitescape.engine.Token.Type;
 import rabbitescape.engine.err.RabbitEscapeException;
 
@@ -25,19 +20,19 @@ public class ThingRenderer
         private static final long serialVersionUID = 1L;
     }
 
-    public static void render( 
-        Chars chars, 
+    public static void render(
+        Chars chars,
         List<Thing> things,
-        boolean runtimeMeta 
+        boolean runtimeMeta
     )
     {
         for ( Thing thing : things )
         {
-            chars.set( 
-                thing.x, 
-                thing.y, 
+            chars.set(
+                thing.x,
+                thing.y,
                 charForThing( thing ),
-                thing.saveState( runtimeMeta ) 
+                thing.saveState( runtimeMeta )
             );
         }
     }
@@ -63,6 +58,10 @@ public class ThingRenderer
         else if ( thing instanceof Pipe )
         {
             return 'P';
+        }
+        else if ( thing instanceof Portal)
+        {
+            return 'X';
         }
         else
         {

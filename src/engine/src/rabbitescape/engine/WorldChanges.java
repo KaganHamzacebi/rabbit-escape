@@ -27,6 +27,7 @@ public class WorldChanges
     private final List<Block>  blocksToRemove = new ArrayList<Block>();
     public final List<Position>   blocksJustRemoved = new ArrayList<Position>();
     private final List<Position>  waterPointsToRecalculate = new ArrayList<>();
+    private final List<Portal> portalsToAdd = new ArrayList<>();
 
     private boolean explodeAll = false;
 
@@ -48,6 +49,7 @@ public class WorldChanges
         }
         world.rabbits.addAll( rabbitsToEnter );
         world.things.addAll( tokensToAdd );
+        world.things.addAll( portalsToAdd );
         world.blockTable.addAll( blocksToAdd );
 
         // Remove dead/saved rabbits, used tokens, dug out blocks
@@ -76,6 +78,7 @@ public class WorldChanges
         blocksToAdd.clear();
         blocksToRemove.clear();
         waterPointsToRecalculate.clear();
+        portalsToAdd.clear();
 
         if ( explodeAll )
         {
@@ -107,6 +110,7 @@ public class WorldChanges
         blocksToAdd.clear();
         blocksToRemove.clear();
         waterPointsToRecalculate.clear();
+        portalsToAdd.clear();
     }
 
     private synchronized void revertEnterRabbits()
@@ -221,6 +225,10 @@ public class WorldChanges
         blocksJustRemoved.add( new Position( x, y ) );
         blocksToRemove.add( block );
         waterPointsToRecalculate.add( new Position( x, y ) );
+    }
+
+    public synchronized void addPortal( Portal portal ){
+        portalsToAdd.add( portal );
     }
 
     public synchronized List<Thing> tokensAboutToAppear()

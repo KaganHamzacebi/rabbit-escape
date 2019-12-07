@@ -2,11 +2,7 @@ package rabbitescape.engine;
 
 import static rabbitescape.engine.util.Util.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import rabbitescape.engine.Rabbit.Type;
 import rabbitescape.engine.WaterRegion;
@@ -351,6 +347,17 @@ public class World
             return null;
         }
         return blockTable.getItemAt( x, y );
+    }
+
+    public List<Portal> getPortals()
+    {
+        List<Portal> portals = new LinkedList<>();
+        for( Thing x : things){
+            if( x instanceof Portal)
+                portals.add( (Portal) x );
+        }
+
+        return portals;
     }
 
     public CompletionState completionState()
